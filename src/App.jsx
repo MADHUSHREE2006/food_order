@@ -1,14 +1,12 @@
-import React from "react";
-import AppRouter from "./router/AppRouter";
-import { FoodProvider } from "./context/FoodContext";
-import './App.css'
+import AppRouter from "./routers/AppRouter";
+import OrderProvider from "./context/OrderContext";
 
-function App() {
+const App = () => {
   return (
-    <FoodProvider>
+    <OrderProvider>
       <AppRouter />
-    </FoodProvider>
-  )
-}
+    </OrderProvider>
+  );
+};
 
-export default App
+export default App;
